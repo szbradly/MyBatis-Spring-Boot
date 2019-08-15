@@ -36,7 +36,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-import tk.mybatis.springboot.model.City;
 import tk.mybatis.springboot.service.CityService;
 
 /**

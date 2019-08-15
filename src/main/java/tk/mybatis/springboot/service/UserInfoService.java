@@ -27,8 +27,6 @@ package tk.mybatis.springboot.service;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import tk.mybatis.springboot.mapper.UserInfoMapper;
-import tk.mybatis.springboot.model.UserInfo;
 
 import java.util.List;
 

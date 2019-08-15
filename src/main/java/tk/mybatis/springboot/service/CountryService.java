@@ -30,8 +30,6 @@ import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 import tk.mybatis.mapper.weekend.Weekend;
 import tk.mybatis.mapper.weekend.WeekendCriteria;
-import tk.mybatis.springboot.mapper.CountryMapper;
-import tk.mybatis.springboot.model.Country;
 
 import java.util.List;
 

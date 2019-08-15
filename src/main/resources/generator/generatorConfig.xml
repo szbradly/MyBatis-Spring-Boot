@@ -18,6 +18,8 @@
                         connectionURL="${spring.datasource.url}"
                         userId="${spring.datasource.username}"
                         password="${spring.datasource.password}">
+            <!--解决mysql驱动升级到8.0后不生成指定数据库代码的问题-->
+            <property name="nullCatalogMeansCurrent" value="true" />
         </jdbcConnection>
 
         <javaModelGenerator targetPackage="tk.mybatis.springboot.model" targetProject="src/main/java"/>
@@ -27,7 +29,7 @@
         <javaClientGenerator targetPackage="tk.mybatis.springboot.mapper" targetProject="src/main/java"
                              type="XMLMAPPER"/>
 
-        <table tableName="country">
+        <table tableName="%">
             <!--mysql 配置-->
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
             <!--oracle 配置-->
